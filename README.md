@@ -2,18 +2,18 @@
 A professional-grade, "Full Stack" algorithmic trading bot designed for 24/7 Bitcoin market participation. This system combines **Dollar Cost Averaging (DCA)** with a dynamic **Average True Range (ATR)** volatility-based stop-loss engine. It integrates multiple data sources and provides real-time alerts via Telegram and email.
 
 ## 🛠 Features
-- *Hybrid Strategy:* Combines conservative DCA buying with volatility-aware risk management using ATR.
+- **Hybrid Strategy:** Combines conservative DCA buying with volatility-aware risk management using ATR.
 
-- *Multi-Source Data:* Pulls live market data from yfinance, with hooks for CoinMarketCap and Investing.com.
+- **Multi-Source Data:** Pulls live market data from yfinance, with hooks for CoinMarketCap and Investing.com.
 
-- *Dynamic Configuration:* Remotely manage trading parameters (budget, drop %, etc.) via Google Sheets or a local JSON cache.
+- **Dynamic Configuration:** Remotely manage trading parameters (budget, drop %, etc.) via Google Sheets or a local JSON cache.
 
-- *Real-time Alerts:* Instant trade notifications via Telegram and a formatted weekly performance report via *Gmail.*
+- **Real-time Alerts:** Instant trade notifications via Telegram and a formatted weekly performance report via *Gmail.*
 
-- *Resilient Design:* Implements robust error handling and silent fallbacks for API outages or missing configuration files.
+- **Resilient Design:** Implements robust error handling and silent fallbacks for API outages or missing configuration files.
 
 ## 📋 Prerequisites
-Before running the bot, ensure you have *Python 3.10+* installed. You will also need to install the following core dependencies:
+Before running the bot, ensure you have **Python 3.10+** installed. You will also need to install the following core dependencies:
 ```bash
 # Core data and technical analysis libraries
 pip install yfinance pandas pandas_ta_classic numpy
@@ -25,7 +25,7 @@ pip install schedule python-telegram-bot requests beautifulsoup4 python-dotenv
 pip install gspread oauth2client
 ```
 ## ⚙️ Configuration (.env setup)
-The bot uses a <mark>.env</mark> file to manage sensitive credentials securely. *Never commit your actual* <mark>.env</mark> *file to GitHub.*
+The bot uses a <mark>.env</mark> file to manage sensitive credentials securely. **Never commit your actual* <mark>.env</mark> *file to GitHub.**
 
 Create a file named <mark>.env</mark> in the root directory.
 
